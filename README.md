@@ -2,27 +2,28 @@
 Lab 6: Memory
 
 Open Task Manager on your computer and take note of the current memory usage." Go to show more and Performance to see the Memory Graph.
-In Program.cs write a function named StackNoParams
 
-    The function makes 5 Value Type Variables.
+## In Program.cs 
 
-Write a function name StackWithParams
+### Write a function named StackNoParams
+* The function makes 5 Value Type variables.
 
-    the Function makes 3 Value type parameters
+### Write a function name StackWithParams
+* The function makes 3 Value type parameters.
 
-Write a function named StackWithHeap
+### Write a function named StackWithHeap
+* The function takes 3 Value type of parameters.
+* The function takes 1 Reference type parameter.
+* The function makes 2 Value type variables.
+* The function makes 1 Reference type variable.
 
-    The function takes 3 Value type of parameters
-    the function takes1 reference type parameter
-    the function makes 2 Value type variables
-    the function makes 1 reference type variable
+### Write a function called StackOver
+* The function creates a stack overflow error.
 
-Write a function called StackOver
+### Write a Driver program to call each Function
 
-    the function creates a stack overflow error.
-    "I showed how this is done in class"
+## Lab Report
 
-Write a Driver program to call each Function
 The lab report needs to show the memory graph for each function.
 the lab report needs to explain what is happening in the memory graph for each function
 The lab report needs to have a stack diagram for the driver program
