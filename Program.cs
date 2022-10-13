@@ -54,13 +54,14 @@ void StackNoParams() {
 StackNoParams();
 
 
-// int withParamsInt = 3_845;
-// double withParamsDouble = 829.0305;
-// char withParamsChar = 'Y';
-// void StackWithParams(int inputInteger, double inputDouble, char inputChar) {
+int withParamsInt = 3_845;
+double withParamsDouble = 829.0305;
+char withParamsChar = 'Y';
 
-// }
+void StackWithParams(int inputInteger, double inputDouble, char inputChar) {
 
-// StackWithParams(withParamsInt, withParamsDouble, withParamsChar);
+}
+
+StackWithParams(withParamsInt, withParamsDouble, withParamsChar);
 
 Console.ReadKey();
