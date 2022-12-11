@@ -3,16 +3,36 @@ Pluto Zitek <https://github.com/GemedetAdept>
 
 [ditaa]
 ....
-+----------------+-----------------------+ 
-|                |                       | 
-|                |                       | 
-|+--------------+|                       | 
-|| y |  6.022   ||                       | 
-|+--------------+|                       | 
-|| x |    3     ||                       | 
-++--------------++                       | 
-| main           |                       | 
-+----------------+-----------------------+ 
++----------------+
+|                |
+|+--------------+|
+|| y |   6.022  ||
+|+--------------+|
+|| x |    3     ||
+|+--------------+|
+*----------------*
+| Main           |
++----------------+
+....
+
+[ditaa]
+....
++----------------+       +------------------+ 
+|                |       |                  | 
+|                |       *------------------* 
+|                |       |                  | 
+|                |   /--->                  | 
+|                |   |   |                  | 
+|                |   |   +------------------+ 
+|                |   |                        
+|+---------------+   |                        
+||   |           |   |                        
+|| a |    *------+---/                        
+||   |           |                            
+|+---------------+                            
+*----------------*                            
+| Main           |                            
++----------------+                            
 ....
 
 == Lab Tasks 
@@ -24,7 +44,7 @@ Pluto Zitek <https://github.com/GemedetAdept>
 
 * [ ] Write a function named StackWithHeap
 	** [ ] The function takes 3 Value type of parameters
-	** [ ] The function takes1 reference type parameter
+	** [ ] The function takes 1 reference type parameter
 	** [ ] The function makes 2 Value type variables
 	** [ ] The function makes 1 reference type variable
 
