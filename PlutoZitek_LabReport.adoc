@@ -1,41 +1,41 @@
 = Lab 6: Memory, Lab Report
 Pluto Zitek <https://github.com/GemedetAdept>
 
-[ditaa]
-....
-+----------------+
-|                |
-|+--------------+|
-|| y |   6.022  ||
-|+--------------+|
-|| x |    3     ||
-|+--------------+|
-*----------------*
-| Main           |
-+----------------+
-....
+// [ditaa]
+// ....
+// +----------------+
+// |                |
+// |+--------------+|
+// || y |   6.022  ||
+// |+--------------+|
+// || x |    3     ||
+// |+--------------+|
+// *----------------*
+// | Main           |
+// +----------------+
+// ....
 
-[ditaa]
-....
-+----------------+       +-------------------+ 
-|                |       |c666               |
-|                |       |      string       |
-|                |       *-------------------* 
-|                |       |   |   |   |   |   | 
-|                |   /---> H | e | l | l | o | 
-|                |   |   |   |   |   |   |   | 
-|                |   |   +-------------------+ 
-|                |   |                         
-|+----+----------+   |                         
-||cDDD|          |   |                         
-|| a  |   *------+---/                         
-||    |          |                             
-|+----+----------+                             
-*----------------*                             
-|c666            |                             
-| Main           |                             
-+----------------+                             
-....
+// [ditaa]
+// ....
+// +----------------+       +-------------------+
+// |                |       |c666               |
+// |                |       |      string       |
+// |                |       *-------------------*
+// |                |       |   |   |   |   |   |
+// |                |   /---> H | e | l | l | o |
+// |                |   |   |   |   |   |   |   |
+// |                |   |   +-------------------+
+// |                |   |
+// |+----+----------+   |
+// ||cDDD|          |   |
+// || a  |   *------+---/
+// ||    |          |
+// |+----+----------+
+// *----------------*
+// |c666            |
+// | Main           |
+// +----------------+
+// ....
 
 == Lab Tasks 
 * [x] In Program.cs write a function named StackNoParams
@@ -54,24 +54,93 @@ Pluto Zitek <https://github.com/GemedetAdept>
 	** [x] The function creates a stack overflow error.
 
 * [ ] Write a Driver program to call each Function
-* [ ] The lab report needs to show the memory graph for each function.
+* [x] The lab report needs to show the memory graph for each function.
 * [ ] the lab report needs to explain what is happening in the memory graph for each function
 * [ ] The lab report needs to have a stack diagram for the driver program
 
-// ## 000: Baseline Memory Usage
-// ![Baseline memory graph.](/labReportScreenshots/000_Memory-Baseline.png "Baseline Memory Graph")
-// | In use | Available | Total | Percentage Used |
-// |:------:|:---------:|:-----:|:----------:|
-// | 10.7 GB | 20.9 GB   | ~31.6 GB| ~33.86% |
+== Memory Graphs
 
-// ## 001: StackNoParams
-// #### Memory Usage Before
-// ![Before StackNoParams](/labReportScreenshots/001-01_Before.png)
-// #### Memory Usage After
-// ![After StackNoParams](/labReportScreenshots/001-02_After.png)
-// #### Exact Memory Usage
-// ![Exact memory usage](/labReportScreenshots/001-03_Exact.png)
+{empty} +
 
-// > The Task Manager's **Perfomance** > **Memory** tab shows an "In use" increase of 0.1 GB, but this is a generalization. The graph itself bumped up by exactly one (1) pixel. The details for the program shows that the program takes **3.2 MB** of memory.
+=== Baseline Memory Usage
+---
+image::labReportScreenshots\000_Memory-BaseLine.png[]
+[%header]
+|===
+| In use | Available | Total | Percentage
+| 10.7 GB | 21 GB | 31.7 GB | 34%
+|===
+
+{empty} +
+
+=== StackNoParams Memory Usage
+---
+image::labReportScreenshots\001_StackNoParams-5.png[]
+[%header]
+|===
+| In use | Available | Total | Percentage
+| 10.6 GB | 21.1 GB | 31.7 GB | 33%
+|===
+
+{empty} +
+
+=== StackWithParams Memory Usage
+---
+image::labReportScreenshots\002_StackWithParams-5.png[]
+[%header]
+|===
+| In use | Available | Total | Percentage
+| 10.4 GB | 21.3 GB | 31.7 GB | 33%
+|===
+
+{empty} +
+
+=== HeapNoParams Memory Usage
+---
+image::labReportScreenshots\003_HeapNoParams-999999.png[]
+[%header]
+|===
+| In use | Available | Total | Percentage
+| 10.4 GB | 21.3 GB | 31.7 GB | 33%
+|===
+
+{empty} +
+
+=== HeapWithParams Memory Usage
+---
+image::labReportScreenshots\004_HeapWithParams-5.png[]
+[%header]
+|===
+| In use | Available | Total | Percentage
+| 10.6 GB | 21.1 GB | 31.7 GB | 34%
+|===
+
+{empty} +
+
+=== StackWithHeap Memory Usage
+---
+image::labReportScreenshots\005_StackWithHeap-999999_999999_999999_999999.png[]
+[%header]
+|===
+| In use | Available | Total | Percentage
+| 10.7 GB | 21.0 GB | 31.7 GB | 34%
+|===
+
+{empty} +
+
+=== StackOver Memory Usage
+---
+image::labReportScreenshots\006_StackOver.png[]
+[%header]
+|===
+| In use | Available | Total | Percentage
+| 10.4 GB | 21.2 GB | 31.7 GB | 33%
+|===
+
+{empty} +
+
+=== Stack Overflow
+
+Despite me expecting this method to draw the most memory out of all of them, there appears to be some kind of "janitor" which takes care of the stack overflow before it can get out of hand.
 
 // #### Stack Diagram
