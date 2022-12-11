@@ -53,7 +53,7 @@ Pluto Zitek <https://github.com/GemedetAdept>
 * [x] Write a function called StackOver
 	** [x] The function creates a stack overflow error.
 
-* [ ] Write a Driver program to call each Function
+* [x] Write a Driver program to call each Function
 * [x] The lab report needs to show the memory graph for each function.
 * [ ] the lab report needs to explain what is happening in the memory graph for each function
 * [ ] The lab report needs to have a stack diagram for the driver program
