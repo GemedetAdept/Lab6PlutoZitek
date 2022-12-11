@@ -28,8 +28,8 @@ Pluto Zitek <https://github.com/GemedetAdept>
 	** [ ] The function makes 2 Value type variables
 	** [ ] The function makes 1 reference type variable
 
-* [ ] Write a function called StackOver
-	** [ ] The function creates a stack overflow error.
+* [x] Write a function called StackOver
+	** [x] The function creates a stack overflow error.
 
 * [ ] Write a Driver program to call each Function
 * [ ] The lab report needs to show the memory graph for each function.
