@@ -44,11 +44,11 @@ Pluto Zitek <https://github.com/GemedetAdept>
 * [x] Write a function name StackWithParams
 	** [x] The Function makes 3 Value type parameters
 
-* [ ] Write a function named StackWithHeap
-	** [ ] The function takes 3 Value type of parameters
-	** [ ] The function takes 1 reference type parameter
-	** [ ] The function makes 2 Value type variables
-	** [ ] The function makes 1 reference type variable
+* [x] Write a function named StackWithHeap
+	** [x] The function takes 3 Value type of parameters
+	** [x] The function takes 1 reference type parameter
+	** [x] The function makes 2 Value type variables
+	** [x] The function makes 1 reference type variable
 
 * [x] Write a function called StackOver
 	** [x] The function creates a stack overflow error.
