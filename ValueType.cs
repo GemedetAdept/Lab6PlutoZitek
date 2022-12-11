@@ -4,7 +4,7 @@ public class ValueType {
 
 	public ValueType() {
 
-		Value = Double.MaxValue;
+		Value = _value;
 	}
 
 	public double Value {

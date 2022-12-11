@@ -16,8 +16,8 @@ Pluto Zitek <https://github.com/GemedetAdept>
 ....
 
 == Lab Tasks 
-* [ ] In Program.cs write a function named StackNoParams
-	** [ ] The function makes 5 Value Type Variables.
+* [x] In Program.cs write a function named StackNoParams
+	** [x] The function makes 5 Value Type Variables.
 
 * [ ] Write a function name StackWithParams
 	** [ ] The Function makes 3 Value type parameters
