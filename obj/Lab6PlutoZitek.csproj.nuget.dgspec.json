@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vivian.zitek\\Programming\\cSharp\\Lab6PlutoZitek\\Lab6PlutoZitek.csproj": {}
+    "C:\\Users\\vivian.zitek\\Programming\\cSharp\\_CS1400-Labs\\Lab6PlutoZitek\\Lab6PlutoZitek.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vivian.zitek\\Programming\\cSharp\\Lab6PlutoZitek\\Lab6PlutoZitek.csproj": {
+    "C:\\Users\\vivian.zitek\\Programming\\cSharp\\_CS1400-Labs\\Lab6PlutoZitek\\Lab6PlutoZitek.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vivian.zitek\\Programming\\cSharp\\Lab6PlutoZitek\\Lab6PlutoZitek.csproj",
+        "projectUniqueName": "C:\\Users\\vivian.zitek\\Programming\\cSharp\\_CS1400-Labs\\Lab6PlutoZitek\\Lab6PlutoZitek.csproj",
         "projectName": "Lab6PlutoZitek",
-        "projectPath": "C:\\Users\\vivian.zitek\\Programming\\cSharp\\Lab6PlutoZitek\\Lab6PlutoZitek.csproj",
+        "projectPath": "C:\\Users\\vivian.zitek\\Programming\\cSharp\\_CS1400-Labs\\Lab6PlutoZitek\\Lab6PlutoZitek.csproj",
         "packagesPath": "C:\\Users\\vivian.zitek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vivian.zitek\\Programming\\cSharp\\Lab6PlutoZitek\\obj\\",
+        "outputPath": "C:\\Users\\vivian.zitek\\Programming\\cSharp\\_CS1400-Labs\\Lab6PlutoZitek\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

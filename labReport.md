@@ -5,7 +5,7 @@
 ![Baseline memory graph.](/labReportScreenshots/000_Memory-Baseline.png "Baseline Memory Graph")
 | In use | Available | Total | Percentage Used |
 |:------:|:---------:|:-----:|:----------:|
-| 7.9 GB | 23.5 GB   | ~31.4 GB| ~25.159% |
+| 11.4 GB | 20.1 GB   | ~31.5 GB| ~36.19% |
 
 ## 001: StackNoParams
 #### Memory Usage Before
