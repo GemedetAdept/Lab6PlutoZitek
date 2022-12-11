@@ -4,7 +4,7 @@ public class ReferenceType {
 
 	public ReferenceType() {
 
-		Reference = new string('A',100_000_000);
+		Reference = _reference;
 	}
 
 	public string Reference {

@@ -1,35 +1,88 @@
 ﻿// StackNoParams
-void StackNoParams(int toCreate) {
+ValueType[] StackNoParams(int toCreate) {
 
-	ValueType[] valueArray = new ValueType[toCreate];
+	ValueType[] dataArray = new ValueType[toCreate];
 	for (int i=0; i < toCreate; i++) {
 		ValueType newValue = new ValueType();
-		valueArray[i] = newValue;
+		dataArray[i] = newValue;
 	}
 
-	foreach (ValueType dbl in valueArray) {Console.WriteLine(dbl);}
+// foreach (ValueType i in dataArray) {Console.WriteLine(i);}
+	Console.ReadKey();
+	return dataArray;
 }
 
 // StackWithParams
-void StackWithParams(int toCreate, double setValue) {
+double[] StackWithParams(int toCreate, double setValue) {
 
-	double[] valueArray = new double[toCreate];
+	double[] dataArray = new double[toCreate];
 	for (int i=0; i < toCreate; i++) {
 		ValueType newValue = new ValueType();
 		newValue.Value = setValue;
-		valueArray[i] = newValue.Value;
+		dataArray[i] = newValue.Value;
 	}
 
-	foreach (double dbl in valueArray) {Console.WriteLine(dbl);}	
+// foreach (double i in dataArray) {Console.WriteLine(i);}	
+	Console.ReadKey();
+	return dataArray;
 }
 
-Console.WriteLine("StackNoParams:");
-StackNoParams(5);
-Snippet.LineBreak();
+// HeapNoParams
+ReferenceType[] HeapNoParams(int toCreate) {
 
-Console.WriteLine("StackWithParams:");
-StackWithParams(5, Double.MaxValue);
-Snippet.LineBreak();
+	ReferenceType[] dataArray = new ReferenceType[toCreate];
+	for (int i=0; i < toCreate; i++) {
+		ReferenceType newValue = new ReferenceType();
+		dataArray[i] = newValue;
+	}
+
+// foreach (ReferenceType i in dataArray) {Console.WriteLine(i);}
+	Console.ReadKey();
+	return dataArray;
+}
+
+// HeapWithParams
+string[] HeapWithParams(int toCreate, string setReference) {
+
+	string[] dataArray = new string[toCreate];
+	for (int i=0; i < toCreate; i++) {
+		ReferenceType newReference = new ReferenceType();
+		newReference.Reference = setReference;
+		dataArray[i] = newReference.Reference;
+	}
+
+// foreach (string i in dataArray) {Console.WriteLine(i);}	
+	Console.ReadKey();
+	return dataArray;
+}
+
+// StackWithHeap
+void StackWithHeap(int valueParamsCount, int refParamsCount, int valueVarsCount, 
+	int refVarsCount, double setValue, string setReference) {
+
+	ValueType[] valueVarsArray = StackNoParams(valueVarsCount);
+	double[] valueParamsArray = StackWithParams(valueParamsCount, setValue);
+
+	ReferenceType[] refVarAray = HeapNoParams(refVarsCount);
+	string[] refParamsArray = HeapWithParams(refParamsCount, setReference);
+
+// foreach (ValueType i in valueVarsArray) {Console.WriteLine(i);}	
+// foreach (double i in valueParamsArray) {Console.WriteLine(i);}	
+// foreach (ReferenceType i in refVarAray) {Console.WriteLine(i);}	
+// foreach (string i in refParamsArray) {Console.WriteLine(i);}
+
+	Console.ReadKey();
+}
+
+// Console.WriteLine("StackNoParams:");
+// StackNoParams(5);
+// Snippet.LineBreak();
+
+// Console.WriteLine("StackWithParams:");
+// StackWithParams(5, Double.MaxValue);
+// Snippet.LineBreak();
+
+StackWithHeap(5, 5, 5, 5, Double.MaxValue, new string('A',100_000_000));
 
 // // Stack Overflow
 // void StackOver() {StackOver();}
