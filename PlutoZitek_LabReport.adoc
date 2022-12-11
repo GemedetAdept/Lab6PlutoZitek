@@ -19,8 +19,8 @@ Pluto Zitek <https://github.com/GemedetAdept>
 * [x] In Program.cs write a function named StackNoParams
 	** [x] The function makes 5 Value Type Variables.
 
-* [ ] Write a function name StackWithParams
-	** [ ] The Function makes 3 Value type parameters
+* [x] Write a function name StackWithParams
+	** [x] The Function makes 3 Value type parameters
 
 * [ ] Write a function named StackWithHeap
 	** [ ] The function takes 3 Value type of parameters
